@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+
+:root{
+--ft-wgt: 200;
+}
+
+  *{box-sizing: border-box;
+}
+body{
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+.navbar{ 
+  color: #000;
+  padding: 15px;
+  border: 1px solid #000;
+}
+.navbar p {
+  font-weight: var(--ft-wgt);
+  padding-left: 10px;
+}
+
+
+/* Header/logo Title 
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  margin-left: 32vw;
+} */
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #dad6cb;
+  padding: 14px;
+  margin-top: 2px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-image: url("C:\Users\Outlook\OneDrive\Desktop\Oglinda\IMG_1804.JPG");
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
